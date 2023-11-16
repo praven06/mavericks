@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAVERICKS</title>
+   <link rel="stylesheet" href="frontpage.css"/>
+   <script src="frontpage.js"> </script>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <nav>
+    <h1>MAVERICKS</h1>
+    <!--<img class="asd" src="logo.jpeg" height="40px" width="40px"/>-->
+  </nav>
+  <div class="marquee">
+    <p>Welcome to skcet demo login page login to continue!</p>
+  </div>
+  
+  <img class="logo" src="img2.jpg" height="50px" width="50px"/>
+  
+  <form id="registrationForm" onsubmit="return validateForm()">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="password">Set Password:</label>
+    <input type="password" id="password" name="password" required>
+    <span class="input-group-addon" style="background-color: #E4E6C3; border: 0px; text-align: right;">
+      <span id="eye-icon" class="glyphicon glyphicon-eye-open" onclick="togglePasswordVisibility()"></span>
+      </span>
+
+    <label for="confirmPassword">Confirm Password:</label>
+    <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+    <div id="passwordMismatchMsg"></div>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>

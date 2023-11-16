@@ -1,0 +1,102 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E4E6C3;
+    background-image: url(img.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+  nav {
+    background-color:#899878;
+    font-family: 'Times New Roman', Times, serif;
+    color: #F7F7F2;
+    padding: 10px;
+    text-align: left;
+    justify-items: center;
+    height:70px;
+
+
+  }
+  .marquee {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    animation: marquee 10s linear infinite;
+    color:red;
+    font-style: bold;
+    font-weight: bolder;
+    font-size:24px;
+    text-shadow: 1px 1px 3px yellow;
+
+  }
+
+  @keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+
+  form {
+    max-width: 400px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top:50px;
+    background-color: #E4E6C3;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: rgb(254, 255, 240);
+  }
+
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+  }
+
+  button:hover {
+    background-color: #45a049;
+  }
+  input, button {
+    transition: all 0.3s ease;
+  }
+  
+form {
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#passwordMismatchMsg{
+    font-size:12px;
+}
+.logo{
+    text-align:center;
+    margin-top:10px;
+    margin-left:40px;
+    border-radius:10px;
+}
