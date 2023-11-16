@@ -15,10 +15,7 @@ body {
     font-family: 'Times New Roman', Times, serif;
     color: #F7F7F2;
     padding: 10px;
-    text-align: left;
-    justify-items: center;
     height:70px;
-
 
   }
   .marquee {
@@ -31,7 +28,7 @@ body {
     font-style: bold;
     font-weight: bolder;
     font-size:24px;
-    text-shadow: 1px 1px 3px black;
+    text-shadow: 1px 1px 3px yellow;
 
   }
 
